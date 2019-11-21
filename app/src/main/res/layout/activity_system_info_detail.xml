@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agricluture.infomessage.SystemInfoDetailActivity">
+
+    <include layout="@layout/share_scond_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout_lly"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_title"
+                    style="@style/c333333_16"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="12dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_send"
+                    style="@style/c333333_15"
+                    android:text="发件人：" />
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_time"
+                    style="@style/c333333_15"
+                    android:layout_alignParentRight="true"
+                    />
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_contents"
+                    style="@style/c333333_15"
+                    android:layout_below="@+id/sys_info_tv_send"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/sys_info_et_jianyi"
+                    android:layout_width="match_parent"
+                    android:layout_height="93dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/white"
+                    android:gravity="left|top"
+                    android:hint="请输入内容"
+                    android:padding="10dp"
+                    android:textColor="@color/color333333"
+                    android:textSize="15sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sys_info_et_jianyi"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    android:padding="13dp">
+
+                    <Button
+                        android:id="@+id/sys_info_btn_clean"
+                        android:layout_width="63dp"
+                        android:layout_height="23dp"
+                        android:background="@drawable/btn_change_c7"
+                        android:text="清空"
+                        android:textSize="15sp"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/sys_info_btn_send"
+                        android:layout_width="63dp"
+                        android:layout_height="23dp"
+                        android:layout_marginLeft="7dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/btn_change_c7"
+                        android:text="发送"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

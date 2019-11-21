@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/bg_yys"
+    android:id="@+id/home_lly"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/hrw_item_lly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/hrw_item_rly_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hrw_item_tv_name"
+                style="@style/c333333_16"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:maxEms="15"
+                android:ellipsize="end"
+                 />
+
+            <TextView
+                android:id="@+id/hrw_item_tv_nameflag"
+                style="@style/cffffff_10"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/hrw_item_tv_name"
+                android:background="@drawable/bg_red_round"
+                android:layout_centerVertical="true"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="急"
+                android:layout_marginBottom="1dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/hrw_item_iv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_jt_maincolor_down" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hrw_item_lly_hidde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/c333333_16"
+                    android:text="流程状态：" />
+
+                <TextView
+                    android:id="@+id/hrw_item_tv_state"
+                    style="@style/cffffff_12"
+                    android:layout_marginLeft="10dp"
+                    android:padding="3dp"
+                    android:text="待审核" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hrw_item_tv_data"
+                style="@style/c333333_16"
+                android:layout_marginTop="7dp"
+                android:text="期别：" />
+
+            <TextView
+                android:id="@+id/hrw_item_tv_time"
+                style="@style/c333333_16"
+                android:layout_marginTop="10dp"
+                android:text="截止时间：" />
+
+            <TextView
+                android:id="@+id/hrw_item_tv_sign_ed"
+                style="@style/c333333_16"
+                android:layout_marginTop="7dp"
+                android:text="已报：" />
+
+
+            <TextView
+                android:id="@+id/hrw_item_tv_sign"
+                style="@style/c333333_16"
+                android:layout_marginTop="7dp"
+                android:text="未报：" />
+
+
+            <Button
+                android:id="@+id/hrw_item_btn_up"
+                android:layout_width="66dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_change_c10"
+                android:gravity="center"
+                android:text="上报"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

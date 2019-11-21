@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agricluture.infomessage.SystemInfoDetailActivity">
+
+    <include layout="@layout/share_scond_title" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_title"
+                    style="@style/c333333_16"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="12dp"
+                     />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/maincolor"
+                    android:text="我：" />
+
+                    <TextView
+                        android:id="@+id/sys_info_tv_time"
+                        style="@style/c333333_15"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/maincolor"
+                        android:text="发给：" />
+
+                    <TextView
+                        android:id="@+id/sys_info_tv_address"
+                        style="@style/c333333_15"
+                       />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/sys_info_tv_contents"
+                    style="@style/c333333_15"
+                    android:layout_below="@+id/sys_info_tv_send"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

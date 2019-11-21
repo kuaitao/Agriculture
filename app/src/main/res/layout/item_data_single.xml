@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dds_lly_tell_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/dds_tv_title"
+            style="@style/c333333_16"
+            android:layout_weight="4"
+            android:text="上年境内企业数量"
+            android:singleLine="true"
+            android:maxEms="13"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/dds_tv_flag"
+            style="@style/cffffff_12"
+            android:padding="3dp"
+            android:text="处理中"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_maincolor_zj"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorababab" />
+</LinearLayout>

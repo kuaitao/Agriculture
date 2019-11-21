@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.agricluture.mine.AboutUsActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+       <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="33dp"
+             android:layout_gravity="center_horizontal"
+             android:background="@mipmap/zr_big_icon"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@mipmap/bg_kk">
+
+
+            <TextView
+                android:id="@+id/detail"
+                style="@style/c333333_12"
+               />
+
+            <TextView
+                style="@style/c333333_12"
+                android:text="\n\n地址：北京市海淀区中关村科学院南路2号融科资讯中心C座北楼12层（100190）
+                            \n\n电话 : 010 82861666     \n\n业务咨询 : 400-183-1066\n\n"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

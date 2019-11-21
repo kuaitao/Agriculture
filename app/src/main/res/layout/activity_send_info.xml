@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/share_scond_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/c333333_15"
+                android:layout_gravity="center_vertical"
+                android:text="消息标题：" />
+
+
+            <EditText
+                android:id="@+id/send_et_title"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bk_ababab_cor7"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/c333333_15"
+                android:layout_marginTop="5dp"
+                android:text="消息正文：" />
+
+
+            <EditText
+                android:id="@+id/send_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/bk_ababab_cor7"
+                android:gravity="left|top"
+                android:padding="10dp"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/c333333_15"
+                android:layout_gravity="center_vertical"
+                android:text="发 送 至 ：" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bk_ababab_cor7"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/c333333_15"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:maxLines="1"
+                    android:text="9093e8bf-5dd2-4794-9be4-373740e5ea98"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@mipmap/add_area" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s_show"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_change_c10"
+            android:text="发送"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

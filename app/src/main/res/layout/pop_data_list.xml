@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:text="按地区"
+        android:textColor="@color/color333333"
+        android:background="@drawable/bk_ababab_zj"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:text="按期别"
+        android:textColor="@color/color333333"
+        android:textSize="13sp"
+        android:background="@drawable/bk_ababab_zj"
+        android:layout_marginTop="1dp"/>
+</LinearLayout>

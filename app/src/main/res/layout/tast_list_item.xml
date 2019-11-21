@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@mipmap/bg_kk"
+    android:layout_margin="5dp"
+    android:padding="8dp"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:id="@+id/test_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_person"
+            style="@style/cababab_14"
+            android:layout_marginTop="2dp"
+            android:text="填报人："/>
+
+        <TextView
+            android:id="@+id/tki_tv_person"
+            style="@style/cababab_14"
+            android:layout_width="83dp"
+            android:layout_toRightOf="@+id/tv_person"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="李俊"
+          />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/cababab_14"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/tki_tv_person"
+            android:layout_marginLeft="20dp"
+            android:text="填报单位："/>
+
+        <TextView
+            android:id="@+id/tki_tv_company"
+            style="@style/cababab_14"
+            android:layout_width="83dp"
+            android:layout_toRightOf="@+id/tv_company"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="天津市"
+          />
+
+        <TextView
+            style="@style/cababab_14"
+            android:layout_below="@+id/tki_tv_person"
+            android:layout_marginTop="15dp"
+            android:text="期&#8195;别："/>
+
+        <TextView
+            android:id="@+id/tki_tv_dataother"
+            style="@style/cababab_14"
+            android:layout_width="83dp"
+            android:layout_alignLeft="@+id/tki_tv_person"
+            android:layout_below="@+id/tki_tv_person"
+            android:gravity="center_vertical"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="5dp"
+            android:text="017-2019"
+           />
+
+
+        <TextView
+            style="@style/cababab_14"
+            android:layout_alignLeft="@+id/tv_company"
+            android:layout_below="@+id/tki_tv_company"
+            android:layout_marginTop="13dp"
+            android:text="填报日期："/>
+
+        <TextView
+            android:id="@+id/tki_tv_time"
+            style="@style/cababab_14"
+            android:layout_width="83dp"
+            android:layout_alignLeft="@+id/tki_tv_company"
+            android:layout_alignTop="@+id/tki_tv_dataother"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="2019-10-17"
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_tast_rlv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/item_tast_lly_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_gravity="right">
+
+        <Button
+            android:id="@+id/item_tast_btn_no"
+            style="@style/cffffff_18"
+            android:layout_width="77dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_num_c7"
+            android:textColor="@color/maincolor"
+            android:text="驳回"/>
+
+
+        <Button
+            android:id="@+id/item_tast_btn_yes"
+            style="@style/cffffff_18"
+            android:layout_width="77dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_change_c7"
+            android:textColor="@color/white"
+            android:text="通过"/>
+
+    </LinearLayout>
+
+</LinearLayout>

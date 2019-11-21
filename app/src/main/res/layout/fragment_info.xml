@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/top_lly"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/top_ll_system"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_num_c7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/top_tv_system"
+                    style="@style/maincolor_16"
+                    android:layout_centerInParent="true"
+                    android:text="系统消息" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_ll_receive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_num_c7"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/top_tv_receive"
+                    style="@style/maincolor_16"
+                    android:layout_centerInParent="true"
+                    android:text="收件箱" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/top_ll_send"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/btn_num_c7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/top_tv_send"
+                    style="@style/maincolor_16"
+                    android:layout_centerInParent="true"
+                    android:text="已发消息" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/search_iv_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@mipmap/send_info_icon" />
+
+</RelativeLayout>

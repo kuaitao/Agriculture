@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">报送平台</string>
+    <string name="home_page_top">农业</string>
+    <string name="login_user_hit">用户名</string>
+    <string name="login_pass_hit">密码</string>
+    <string name="login_yzm_hit">验证码</string>
+    <string name="login_btn">登录</string>
+
+    <string name="main_homepage">首页</string>
+    <string name="main_terminal">查询</string>
+    <string name="main_data">消息</string>
+    <string name="main_mine">我的</string>
+    <string name="login_title">农产品数据采集平台</string>
+
+    <string name="search_title">查询</string>
+    <string name="data_title">上报情况统计</string>
+    <string name="info_title">消息</string>
+    <string name="mine_title">我的</string>
+    <string name="tell_yes">已报</string>
+    <string name="tastlist">全国主要经济作物和养殖产品价格统计</string>
+    <string name="search_reault">查询结果</string>
+    <string name="go_task">待办任务</string>
+    <string name="system_info">系统消息</string>
+    <string name="info_detail">消息详情</string>
+    <string name="mine_set">设置</string>
+    <string name="mine_tellme">建议投诉</string>
+    <string name="about_us">关于我们</string>
+    <string name="account_sale">账户与安全</string>
+    <string name="personal_info">个人信息</string>
+    <string name="select_product">选择产品名称</string>
+    <string name="modify_name">修改名字</string>
+    <string name="modify_phone">联系方式</string>
+    <string name="modify_address">修改地址</string>
+    <string name="modify_company">修改单位</string>
+    <string name="data_purchase">数据采集</string>
+    <string name="tell_no">未报</string>
+    <string name="infoed_detail">发送详情</string>
+    <string name="sending_info">发消息</string>
+
+
+
+
+    <string name="fingerprint_recognition_start">开始指纹识别</string>
+    <string name="fingerprint_recognition_cancel">取消指纹识别</string>
+    <string name="fingerprint_recognition_guide_tip">点击“开始指纹识别”按钮</string>
+    <string name="fingerprint_recognition_tip">请进行指纹识别，长按指纹解锁键</string>
+    <string name="fingerprint_recognition_not_support">此设备不支持指纹解锁</string>
+    <string name="fingerprint_recognition_success">指纹识别成功</string>
+    <string name="fingerprint_recognition_failed">指纹识别失败，请重试！</string>
+    <string name="fingerprint_recognition_error">指纹识别错误，等待几秒之后再重试</string>
+    <string name="fingerprint_recognition_authenticating">指纹识别已经开启，长按指纹解锁键</string>
+    <string name="fingerprint_recognition_unlock_screen">测试密码解锁屏幕</string>
+    <string name="fingerprint_recognition_not_enrolled">您还没有录制指纹，请录入！</string>
+    <string name="fingerprint_not_set_unlock_screen_pws">系统没有设置锁屏密码，请设置！</string>
+    <string name="fingerprint_sys_setting_page">进入系统指纹设置页面</string>
+    <string name="sys_pwd_recognition_success">系统密码识别成功</string>
+    <string name="sys_pwd_recognition_failed">系统密码识别失败</string>
+</resources>

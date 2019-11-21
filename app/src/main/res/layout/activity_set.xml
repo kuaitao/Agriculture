@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.agricluture.mine.SetActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+      >
+
+        <TextView
+            style="@style/c333333_16"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/message_icon"
+            android:text="&#8195;消息通知"/>
+
+
+        <Switch
+            android:id="@+id/set_st_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:switchMinWidth="40dp"
+            android:thumb="@drawable/my_thumb"
+            android:track="@mipmap/sw_out"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_rly_updata"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_16"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/updata_icon"
+            android:gravity="center_vertical"
+            android:text="&#8195;检测更新"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_rly_exits"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_16"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/exits_login"
+            android:text="&#8195;退出登录"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

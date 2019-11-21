@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agriculture">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 小米 配置开始 -->
+    <permission
+        android:name="com.qmall.womao.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.qmall.womao.permission.MIPUSH_RECEIVE" /> <!-- 小米 配置结束 -->
+    <!-- 华为 配置开始 -->
+    <!-- HMS-SDK引导升级HMS功能，访问OTA服务器需要网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- HMS-SDK引导升级HMS功能，保存下载的升级包需要SD卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 检测wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 为了获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- MeiZu 配置开始 < -->
+    <!-- 兼容 flyme5.0 以下版本，魅族内部集成 pushSDK 必填，不然无法收到 消息 -->
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+
+    <permission
+        android:name="com.qmall.womao.push.permission.MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.qmall.womao.push.permission.MESSAGE" /> <!-- 兼容 flyme3.0 配置权限 -->
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" /> <!-- MeiZu 配置结束 < -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 获取蓝牙硬件信息 可选 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:name="com.agricluture.main.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.agricluture.main.IntoActivity"></activity>
+        <activity android:name="com.agricluture.main.WelComeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.agricluture.infomessage.SystemInfoEdDetailActivity" />
+        <activity android:name="com.agricluture.infomessage.SendInfoActivity" />
+        <activity android:name="com.agricluture.updata.TellNoActivity" />
+        <activity android:name="com.agricluture.homepage.PurchaseActivity" />
+        <activity android:name="com.agricluture.mine.NamePhoneCompanyActivity" />
+        <activity android:name="com.agricluture.searchall.SelectProductActivity" />
+        <activity android:name="com.agricluture.mine.PersonalInfoActivity" />
+        <activity android:name="com.agricluture.mine.AccountSafeActivity" />
+        <activity android:name="com.agricluture.mine.AboutUsActivity" />
+        <activity android:name="com.agricluture.mine.SuggestedComplaintActivity" />
+        <activity android:name="com.agricluture.mine.SetActivity" />
+        <activity android:name="com.agricluture.infomessage.SystemInfoDetailActivity" />
+        <activity android:name="com.agricluture.homepage.MoreTastActivity" />
+        <activity android:name="com.agricluture.searchall.SearchResultActivity" />
+        <activity android:name="com.agricluture.homepage.TastListActivity" />
+        <activity android:name="com.agricluture.updata.TellYesActivity" />
+        <activity android:name="com.agricluture.login.LoginActivity"></activity>
+
+        <activity android:name="com.agricluture.login.LoginSelectsActivity"></activity>
+        <activity
+            android:name="com.agricluture.main.MainActivity"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="APP_ID"
+            android:value="${applicationId}" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+    </application>
+
+</manifest>

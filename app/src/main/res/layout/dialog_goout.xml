@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="253dp"
+        android:layout_height="259dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+           style="@style/c333333_16"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="驳回原因"/>
+
+        <EditText
+            android:id="@+id/goout_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:gravity="left|top"
+            android:textSize="16sp"
+            android:textColor="@color/color333333"
+            android:background="@drawable/bk_ababab_cor7"
+            android:padding="7dp"
+            android:layout_margin="7dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/goout_btn_no"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:textColor="@color/maincolor"
+                android:background="@drawable/btn_num_c7"
+                android:text="驳回"/>
+
+            <Button
+                android:id="@+id/goout_btn_yes"
+                android:layout_width="72dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="43dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_change_c7"
+                android:text="取消"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

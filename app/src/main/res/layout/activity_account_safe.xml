@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.agricluture.mine.AccountSafeActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+
+    <RelativeLayout
+        android:id="@+id/set_rly_finger"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_16"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:drawableLeft="@mipmap/finger_icon"
+            android:text="&#8195;账户与安全"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/set_tv_finger"
+            style="@style/c333333_16"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_marginRight="10dp"
+            android:text="已开启"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="255dp"
+        android:layout_height="265dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bg_cor10">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_marginTop="15dp"
+            android:text="指纹登陆"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/login_zw"/>
+
+        <TextView
+            style="@style/c333333_16"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="请轻触感应器验证指纹"/>
+
+
+         <Button
+             android:id="@+id/btn_cancle"
+             android:layout_width="112dp"
+             android:layout_height="25dp"
+             android:textColor="@color/white"
+             android:layout_centerHorizontal="true"
+             android:textSize="16sp"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/btn_change_c7"
+             android:text="取消"/>
+    </LinearLayout>
+</RelativeLayout>

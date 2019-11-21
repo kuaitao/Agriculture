@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agricluture.searchall.SearchResultActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+    <TextView
+        style="@style/c333333_16"
+        android:layout_margin="10dp"
+        android:text="全国主要经济作物和养殖产品价格统计"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:visibility="gone"
+        android:background="@color/colorababab"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/mt_rly_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_kk"
+            android:padding="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/mt_tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:layout_centerInParent="true"
+                android:text="产品"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_jt_maincolor_down"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mt_rly_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:background="@mipmap/bg_kk"
+            android:padding="0dp"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/mt_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/maincolor"
+                android:layout_centerInParent="true"
+                android:text="地区"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/more_jt_maincolor_down"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

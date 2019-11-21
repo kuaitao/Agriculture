@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/yy_middle_bg"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_class"
+            style="@style/cababab_14"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="产品名称：" />
+
+        <TextView
+            android:id="@+id/tkc_tv_class"
+            style="@style/cababab_14"
+            android:layout_width="83dp"
+            android:layout_toRightOf="@+id/tv_class"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="小麦" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tkc_tv_class"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorababab"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_live"
+            style="@style/cababab_14"
+            android:layout_below="@+id/view_line"
+            android:padding="1dp"
+            android:layout_marginTop="10dp"
+            android:text="规格等级：" />
+
+        <TextView
+            android:id="@+id/tkc_et_live"
+            style="@style/cababab_14"
+            android:layout_width="88dp"
+            android:layout_toRightOf="@+id/tv_live"
+            android:layout_alignTop="@+id/tv_live"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_personprice"
+            style="@style/cababab_14"
+            android:layout_below="@+id/tv_live"
+            android:padding="1dp"
+            android:layout_marginTop="10dp"
+            android:text="农民出售价：" />
+
+        <TextView
+            android:id="@+id/tkc_et_personprice"
+            style="@style/cababab_14"
+            android:layout_width="73dp"
+            android:layout_toRightOf="@+id/tv_personprice"
+            android:layout_alignTop="@+id/tv_personprice"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_agopersonprice"
+            style="@style/cababab_14"
+            android:layout_below="@+id/tv_personprice"
+            android:padding="1dp"
+            android:layout_marginTop="10dp"
+            android:text="上期农民出售价：" />
+
+        <TextView
+            android:id="@+id/tkc_et_agopersonprice"
+            style="@style/cababab_14"
+            android:layout_width="48dp"
+            android:layout_toRightOf="@+id/tv_agopersonprice"
+            android:layout_alignTop="@+id/tv_agopersonprice"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_company"
+            style="@style/cababab_14"
+            android:layout_below="@+id/view_line"
+            android:layout_marginTop="10dp"
+           android:layout_toRightOf="@+id/tkc_et_live"
+            android:layout_marginLeft="20dp"
+            android:padding="1dp"
+            android:text="单位：" />
+
+        <TextView
+            android:id="@+id/tkc_et_company"
+            style="@style/cababab_14"
+            android:layout_width="93dp"
+            android:layout_toRightOf="@+id/tv_company"
+            android:layout_alignTop="@+id/tv_company"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_marketprice"
+            style="@style/cababab_14"
+            android:layout_below="@+id/tv_company"
+            android:layout_alignLeft="@+id/tv_company"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="市场价格：" />
+
+        <TextView
+            android:id="@+id/tkc_et_marketprice"
+            style="@style/cababab_14"
+            android:layout_width="67dp"
+            android:layout_toRightOf="@+id/tv_marketprice"
+            android:layout_alignTop="@+id/tv_marketprice"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_agomarketprice"
+            style="@style/cababab_14"
+            android:layout_below="@+id/tv_marketprice"
+            android:layout_alignLeft="@+id/tv_company"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:text="上期市场价格：" />
+
+        <TextView
+            android:id="@+id/tkc_et_agomarketprice"
+            style="@style/cababab_14"
+            android:layout_width="38dp"
+            android:layout_toRightOf="@+id/tv_agomarketprice"
+            android:layout_alignTop="@+id/tv_agomarketprice"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

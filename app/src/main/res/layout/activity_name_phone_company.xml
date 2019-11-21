@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.agricluture.mine.NamePhoneCompanyActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:background="@drawable/bk_ababab_cor7"
+        android:layout_margin="10dp">
+
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorababab"
+            android:textSize="14sp"
+            android:hint="请输入内容"
+            android:background="@null"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+
+        <ImageView
+            android:id="@+id/clean_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/clean_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/share_scond_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_main_RL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_title"
+        android:layout_marginBottom="52dp">
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_main_bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <!--底部导航栏-->
+
+        <include layout="@layout/bottombar" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

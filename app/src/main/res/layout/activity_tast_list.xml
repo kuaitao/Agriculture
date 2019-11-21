@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agricluture.updata.TellYesActivity">
+
+    <include layout="@layout/share_scond_title" />
+
+    <LinearLayout
+        android:id="@+id/mt_rly_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="0dp"
+        android:background="@mipmap/bg_kk"
+       >
+
+        <TextView
+            android:id="@+id/mt_tv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/maincolor"
+            android:text="地区"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/sanjiao_down"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    
+    <Button
+        android:id="@+id/btn_all_refuse"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_change_c17"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="13dp"
+        android:text="全 部 驳 回"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_height="27dp"/>
+</LinearLayout>

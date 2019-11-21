@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/share_scond_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/c000000_14"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:text="全国主要经济作物和养殖产品价格统计" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/yy_big_bg"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/test_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_person"
+                    style="@style/cababab_14"
+                    android:layout_marginTop="2dp"
+                    android:text="填报人：" />
+
+                <TextView
+                    android:id="@+id/tki_tv_person"
+                    style="@style/cababab_14"
+                    android:layout_width="83dp"
+                    android:layout_toRightOf="@+id/tv_person"
+                    android:background="@drawable/bk_ababab_zj"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="李俊" />
+
+
+                <TextView
+                    android:id="@+id/tv_company"
+                    style="@style/cababab_14"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/tki_tv_person"
+                    android:text="填报单位：" />
+
+                <TextView
+                    android:id="@+id/tki_tv_company"
+                    style="@style/cababab_14"
+                    android:layout_width="83dp"
+                    android:layout_toRightOf="@+id/tv_company"
+                    android:background="@drawable/bk_ababab_zj"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="山西省" />
+
+                <TextView
+                    style="@style/cababab_14"
+                    android:layout_below="@+id/tki_tv_person"
+                    android:layout_marginTop="15dp"
+                    android:text="期&#8195;别：" />
+
+                <TextView
+                    android:id="@+id/tki_tv_dataother"
+                    style="@style/cababab_14"
+                    android:layout_width="83dp"
+                    android:layout_below="@+id/tki_tv_person"
+                    android:layout_alignLeft="@+id/tki_tv_person"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/bk_ababab_zj"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="017-2019" />
+
+
+                <TextView
+                    style="@style/c000000_14"
+                    android:layout_below="@+id/tki_tv_company"
+                    android:layout_alignLeft="@+id/tv_company"
+                    android:layout_marginTop="13dp"
+                    android:text="填报日期：" />
+
+                <TextView
+                    android:id="@+id/tki_tv_time"
+                    style="@style/c000000_14"
+                    android:layout_width="83dp"
+                    android:layout_alignLeft="@+id/tki_tv_company"
+                    android:layout_alignTop="@+id/tki_tv_dataother"
+                    android:background="@drawable/bk_ababab_zj"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/item_tast_rlv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_tast_lly_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+
+        <Button
+            android:id="@+id/item_tast_btn_yes"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_change_c17"
+            android:text="保存"
+            android:layout_marginRight="1dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/item_tast_btn_no"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_num_c17"
+            android:layout_toLeftOf="@+id/item_tast_btn_yes"
+            android:text="上报"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/maincolor"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</LinearLayout>

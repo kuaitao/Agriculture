@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.agricluture.mine.SetActivity">
+
+    <include layout="@layout/share_scond_title"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/person_rly_head"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="头像"/>
+
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <com.gcssloop.widget.RCImageView
+            android:id="@+id/person_iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/about_icon"
+            android:scaleType="fitXY"
+            app:round_as_circle="true"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/person_rly_name"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="姓名"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_name"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right2"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_rly_sex"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="性别"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_sex"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right3"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_rly_contact"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="联系方式"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_contact"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right4"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_rly_company"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="单位"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_company"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right5"
+            android:layout_marginRight="10dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_rly_area"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="地区"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_area"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right6"
+            android:layout_marginRight="10dp"
+           />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/person_rly_address"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="地址"/>
+
+
+
+        <ImageView
+            android:id="@+id/iv_right7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/set_right"/>
+
+        <TextView
+            android:id="@+id/person_tv_address"
+            style="@style/c333333_18"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_right7"
+            android:layout_marginRight="10dp"
+            android:text="未填写"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorababab"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

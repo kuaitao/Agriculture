@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.agricluture.updata.TellYesActivity">
+
+    <include layout="@layout/share_scond_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            style="@style/c000000_14"
+            android:text="全国主要经济作物和养殖产品价格统计" />
+
+        <TextView
+            android:id="@+id/tv_yib"
+            style="@style/c000000_14"
+            android:layout_alignParentRight="true"
+            android:text="已报：714" />
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@mipmap/yy_big_bg"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorababab" />
+
+    <RelativeLayout
+        android:id="@+id/rly_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/rly_bottom_iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/double_select_out"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+           style="@style/c000000_16"
+            android:layout_toRightOf="@+id/rly_bottom_iv_select"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="全选"/>
+
+        <Button
+            android:id="@+id/rly_bottom_btn_select"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_change_c7"
+            android:text="催办"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</LinearLayout>
